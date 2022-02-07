@@ -1,0 +1,42 @@
+{
+	"name": "matchday-backend",
+	"version": "0.0.1",
+	"description": "Match Day API",
+	"main": "dist/index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "tsc",
+		"dev": "nodemon src/index.ts",
+		"start": "node dist/index.js",
+		"npm-check": "npm-check -u"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/MomoRazor/MatchDay-api.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/MomoRazor/MatchDay-api/issues"
+	},
+	"homepage": "https://github.com/MomoRazor/MatchDay-api#readme",
+	"devDependencies": {
+		"@types/express": "^4.17.13",
+		"@types/morgan": "^1.9.3",
+		"nodemon": "^2.0.15",
+		"npm-check": "5.9.2",
+		"ts-node": "^10.4.0",
+		"typescript": "^4.5.5"
+	},
+	"dependencies": {
+		"apollo-server-express": "^3.6.2",
+		"cors": "^2.8.5",
+		"dotenv": "^16.0.0",
+		"express": "^4.17.2",
+		"firebase-admin": "^10.0.2",
+		"graphql": "^16.2.0",
+		"mongoose": "^6.1.8",
+		"morgan": "^1.10.0"
+	}
+}

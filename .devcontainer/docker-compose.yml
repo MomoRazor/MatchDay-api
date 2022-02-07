@@ -1,0 +1,21 @@
+version: '3.4'
+
+services:
+    app:
+        build:
+            context: .
+            dockerfile: Dockerfile
+            args:
+                USER_UID: 1000
+                USER_GID: 1000
+
+        volumes:
+            - ..:/workspace:cached
+
+        command: sleep infinity
+
+        ports:
+            - 60000:60000
+            - 60001:60001
+            - 60002:60002
+            - 60003:60003
